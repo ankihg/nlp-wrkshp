@@ -16,8 +16,8 @@ var wordnet = new natural.WordNet();
 
 wordnet.lookup('fire', function(results) {
     results.forEach(function(result) {
-        // console.log(JSON.stringify(result, null, 4));
-        // console.log('------------------------------------');
+        console.log(JSON.stringify(result, null, 4));
+        console.log('------------------------------------');
         // console.log(result.synsetOffset);
         // console.log(result.pos);
         // console.log(result.lemma);
@@ -27,10 +27,7 @@ wordnet.lookup('fire', function(results) {
     });
 });
 
-wordnet.get(7318884, 'n', function(result) {
-    console.log('------------------------------------');
-    console.log(result.lemma);
-    console.log(result.pos);
-    console.log(result.gloss);
-    console.log(result.synonyms);
-});
+// wordnet.get(379335, 'v', function(result) {
+//     console.log('------------------------------------');
+//     console.log(result);
+// });

@@ -14,14 +14,7 @@ module.exports = (pac, go) => {
                         lines.forEach((line) => {
                             var words = tokenizer.tokenize(line);
                             words.forEach((word) => {
-                                let key = word.toLowerCase();
-                                pac.words[key] = pac.words[key] || [];
-                                pac.words[key].push({
-                                    pieceId: piece.id,
-                                    stanza: stanza,
-                                    line: line,
-                                    word: word,
-                                });
+                                new pac.models.Occurrence(piece.id, stanza, line, word.toLowerCase());
                             });
                         });
                     });
@@ -29,8 +22,5 @@ module.exports = (pac, go) => {
                     go();
                 }, go);
         }],
-        (e) => {
-            console.log(pac.words);
-            console.log('e', e);
-        });
+        go);
 }

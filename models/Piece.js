@@ -1,6 +1,9 @@
 const uuid = require('uuid/v4');
 
-const all = [];
+const all = {
+    arr: [],
+    id: {},
+};
 class Piece {
     constructor(artist, collection, name, text, datapath) {
         this.id = uuid();
@@ -9,11 +12,12 @@ class Piece {
         this.name = name;
         this.text = text;
         this.datapath = datapath;
-        all.push(this);
+        all.arr.push(this);
+        all.id[this.id] = this;
     }
 
-    static all() {
-        return all;
+    static all(by) {
+        return all[by || 'arr'];
     }
 };
 
