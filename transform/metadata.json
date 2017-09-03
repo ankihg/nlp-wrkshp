@@ -8,6 +8,19 @@
         "car": {
             "headlights": true,
             "street": true
+        },
+        "suburb": {
+            "grass": true,
+            "street": true
+        },
+        "family": {
+            "parent": true,
+            "mom": true,
+            "mother": true,
+            "dad": true,
+            "father": true,
+            "brother": true,
+            "sister": true
         }
     },
     "wordToThemes": {
@@ -15,6 +28,19 @@
         "burn": ["fire"],
         "gasoline": ["fire"],
         "headlights": ["car"],
-        "street": ["car"]
+        "highway": ["car"],
+        "drive": ["car", "suburb"],
+        "street": ["car", "suburb"],
+        "car": ["suburb"],
+        "grass": ["suburb"],
+        "yard": ["suburb"],
+        "house": ["suburb"],
+        "parent": ["family"],
+        "mom": ["family"],
+        "mother": ["family"],
+        "dad": ["family"],
+        "father": ["family"],
+        "brother": ["family"],
+        "sister": ["family"]
     }
 }
