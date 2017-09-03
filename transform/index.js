@@ -1,25 +1,30 @@
 const async = require('async');
 const natural = require('natural');
 const tokenizer = new natural.WordTokenizer();
+const wordnet = new natural.WordNet();
+
+const utils = require('./utils');
+
 
 module.exports = (pac, go) => {
     async.series([
         (go) => {
-            pac.words = {};
+            pac.themes = {};
             async.each(pac.models.Piece.all(),
                 (piece, go) => {
                     let stanzas = piece.text.split('\n\n');
-                    stanzas.forEach((stanza) => {
-                        let lines = stanza.split('\n');
-                        lines.forEach((line) => {
-                            var words = tokenizer.tokenize(line);
-                            words.forEach((word) => {
-                                new pac.models.Occurrence(piece.id, stanza, line, word.toLowerCase());
-                            });
-                        });
-                    });
 
-                    go();
+                    async.each(stanzas, (stanza, go) => {
+                        let lines = stanza.split('\n');
+                        async.each(lines, (line, go) => {
+                            var words = tokenizer.tokenize(line);
+                            async.each(words, (word, go) => {
+                                let occurrence = new pac.models.Occurrence(piece.id, stanza, line, word);
+                                utils.matchThemes(pac.themes, occurrence);
+                                go();
+                            }, go);
+                        }, go);
+                    },go);
                 }, go);
         }],
         go);

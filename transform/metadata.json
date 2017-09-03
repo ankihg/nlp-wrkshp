@@ -1,0 +1,20 @@
+{
+    "themes": {
+        "fire": {
+            "flame": true,
+            "burn": true,
+            "gasoline": true
+        },
+        "car": {
+            "headlights": true,
+            "street": true
+        }
+    },
+    "wordToThemes": {
+        "flame": ["fire"],
+        "burn": ["fire"],
+        "gasoline": ["fire"],
+        "headlights": ["car"],
+        "street": ["car"]
+    }
+}
