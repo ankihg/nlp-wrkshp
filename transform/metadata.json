@@ -27,6 +27,7 @@
         "flame": ["fire"],
         "burn": ["fire"],
         "gasoline": ["fire"],
+        "ash": ["fire"],
         "headlights": ["car"],
         "highway": ["car"],
         "drive": ["car", "suburb"],

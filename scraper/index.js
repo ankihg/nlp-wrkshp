@@ -21,7 +21,12 @@ request(url, (err, response, html) => {
         else if (el[0].name == 'a') {
             // console.log('song', el.text());
             if (activeAlbum)
-                albums[activeAlbum].push(el.text());
+                albums[activeAlbum].push({
+                    name: el.text(),
+                    lyricLink: el.attr('href'),
+                });
+            // console.log('show el \n');
+            // console.log(el);
         }
     });
     console.log(albums);
