@@ -13,18 +13,19 @@ request(url, (err, response, html) => {
     let activeAlbum = null;
     let children = $('#listAlbum').children();
     async.each(children,
-        function(child) {
-            var el = $(child);
+        function(child, go) {
+            let el = $(child);
 
             if (el[0].name == 'div') {
                 activeAlbum = el.text();
                 albums[el.text()] = [];
-            } else if (el[0].name == 'a') {
+                return go();
+            } if (el[0].name == 'a') {
                 if (!el.text()) return;
                 let lyricsLink = el.attr('href');
-
-                albums[activeAlbum].push(el.text());
-
+                return scrapeLyrics(host + lyricsLink.slice(2), (e) => {
+                    return go(e);
+                });
             }
         }, (e) => {
             console.log(e || 'success');
@@ -37,8 +38,9 @@ request(url, (err, response, html) => {
 });
 
 
-function scrapeLyrics(url) {
+function scrapeLyrics(url, go) {
     request(url, (err, response, html) => {
-
+        // console.log('html', html);
+        return go();
     });
 }
