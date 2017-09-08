@@ -37,13 +37,16 @@ let lyricsUrl = 'https://www.azlyrics.com/lyrics/arcadefire/everythingnow.html';
 function scrapeLyrics(url, go) {
     request(url, (err, response, html) => {
         let $ = cheerio.load(html);
-        let divs = $('div:not([class])')
-        console.log(divs.length);
-        divs.filter(() => {
-            let div = $(this);
-            console.log(div);
-            console.log(div.text());
-        });
+        // let divs = $('div:not([class])')
+        let mainPage = $('.main-page');
+        let row = mainPage.children('.row');
+        let lyricsDiv = row.find('div:not([class])');
+        console.log(lyricsDiv.text());
+        // divs.filter(() => {
+        //     let div = $(this);
+        //     console.log(div);
+        //     console.log(div.text());
+        // });
         return go();
     });
 }
