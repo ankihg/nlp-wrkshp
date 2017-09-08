@@ -5,15 +5,18 @@ const async = require('async');
 const host = 'https://www.azlyrics.com';
 const url = 'https://www.azlyrics.com/a/arcadefire.html';
 
-module.exports = (pac, go) => {
-    request(url, (err, response, html) => {
-        if (err) console.log('error', err);
+// const proxies = ["http://107.170.13.140:3128", "http://198.23.67.90:3128"]
+const proxies = ["http://skullproxy.com"];
 
+module.exports = (pac, go) => {
+    request({url: url, proxy: getProxy()}, (err, response, html) => {
+        if (err) return go(err);
+        console.log('im back');
         let $ = cheerio.load(html);
         let albums = {};
         let activeAlbum = null;
         let children = $('#listAlbum').children();
-        async.each(children,
+        async.eachSeries(children,
             function(child, go) {
                 let el = $(child);
 
@@ -33,7 +36,9 @@ module.exports = (pac, go) => {
                     return scrapeLyrics(host + lyricsLink.slice(2), (e, lyricsText) => {
                         if (e) return go(e);
                         song.lyrics = lyricsText;
-                        new pac.models.Piece('arcade fire', song.album, song.name, lyricsText, el.attr('href'));
+                        console.log('\n\n', lyricsText, '\n\n');
+                        if (lyricsText)
+                            new pac.models.Piece('arcade fire', song.album, song.name, lyricsText, el.attr('href'));
                         return go();
                     });
                 }
@@ -41,20 +46,23 @@ module.exports = (pac, go) => {
             }, (e) => {
                 console.log(e || 'success');
                 console.log(JSON.stringify(albums, null, 4));
+                // console.log('emptyLyrics', emptyLyrics);
                 go(e);
             });
     });
 };
 
+let emptyLyrics = [];
 function scrapeLyrics(url, go) {
-    console.log('scraping', url);
-    request(url, (err, response, html) => {
+    request({url: url, proxy: getProxy()}, (err, response, html) => {
+        if (err) return go(err);
         let $ = cheerio.load(html);
         // let divs = $('div:not([class])')
         let mainPage = $('.main-page');
         let row = mainPage.children('.row');
         let lyricsDiv = row.find('div:not([class])');
         // console.log(lyricsDiv.text());
+        if (!lyricsDiv.text()) emptyLyrics.push(url);
         return go(null, lyricsDiv.text());
     });
 }
@@ -62,3 +70,10 @@ function scrapeLyrics(url, go) {
 // scrapeLyrics(lyricsUrl, () => {
 //     console.log('hii');
 // })
+
+function getProxy() {
+    let i = Math.floor(Math.random() * proxies.length);
+    console.log(proxies[i]);
+    return proxies[i];
+}
+// getProxy();

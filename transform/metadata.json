@@ -21,7 +21,10 @@
             "father": true,
             "brother": true,
             "sister": true
-        }
+        },
+        "weather": {},
+        "house": {},
+        "sleep": {}
     },
     "wordToThemes": {
         "flame": ["fire"],
@@ -32,9 +35,15 @@
         "highway": ["car"],
         "drive": ["car", "suburb"],
         "street": ["car", "suburb"],
+        "road": ["car", "suburb"],
+        "interstate": ["car"],
         "car": ["suburb"],
+        "suburban": ["suburb"],
+        "house": ["suburb"],
         "grass": ["suburb"],
-        "yard": ["suburb"],
+        "yard": ["suburb", "house"],
+        "window": ["house"],
+        "wall": ["house"],
         "house": ["suburb"],
         "parent": ["family"],
         "mom": ["family"],
@@ -42,6 +51,12 @@
         "dad": ["family"],
         "father": ["family"],
         "brother": ["family"],
-        "sister": ["family"]
+        "sister": ["family"],
+        "rain": ["weather"],
+        "snow": ["weather"],
+        "wind": ["weather"],
+        "bed": ["sleep"],
+        "tired": ["sleep"],
+        "covers": ["sleep"]
     }
 }

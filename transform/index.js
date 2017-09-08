@@ -10,6 +10,8 @@ module.exports = (pac, go) => {
     async.series([
         (go) => {
             pac.themes = {};
+            console.log('how many songs', pac.models.Piece.all().length);
+            console.log(pac.models.Piece.all().map((piece) => piece.name));
             async.each(pac.models.Piece.all(),
                 (piece, go) => {
                     let stanzas = piece.text.split('\n\n');

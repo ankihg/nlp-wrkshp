@@ -10,7 +10,7 @@ const self = () => {
             require('./transform').bind(null, pac),
         ], (e) => {
             console.log('e', e);
-            console.log(pac.themes);
+            console.log(JSON.stringify(pac.themes, null, 4));
             // Object.keys(pac.words).forEach((word) => {
             //     console.log(word, pac.words[word].associations);
             //     // let {occurrences, associations} = pac.words[word];
