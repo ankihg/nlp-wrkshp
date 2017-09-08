@@ -17,7 +17,7 @@ module.exports = (pac, go) => {
                     async.each(stanzas, (stanza, go) => {
                         let lines = stanza.split('\n');
                         async.each(lines, (line, go) => {
-                            var words = tokenizer.tokenize(line);
+                            let words = tokenizer.tokenize(line);
                             async.each(words, (word, go) => {
                                 let occurrence = new pac.models.Occurrence(piece.id, stanza, line, word);
                                 utils.matchThemes(pac.themes, occurrence);

@@ -6,7 +6,7 @@ const pac = {
 
 const self = () => {
     async.series([
-            require('./extract').bind(null, pac),
+            require('./scraper').bind(null, pac),
             require('./transform').bind(null, pac),
         ], (e) => {
             console.log('e', e);
