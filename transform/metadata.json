@@ -52,6 +52,7 @@
         "father": ["family"],
         "brother": ["family"],
         "sister": ["family"],
+        "storm": ["weather"],
         "rain": ["weather"],
         "snow": ["weather"],
         "wind": ["weather"],

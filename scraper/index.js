@@ -5,18 +5,18 @@ const async = require('async');
 const host = 'https://www.azlyrics.com';
 const url = 'https://www.azlyrics.com/a/arcadefire.html';
 
-// const proxies = ["http://107.170.13.140:3128", "http://198.23.67.90:3128"]
-const proxies = ["http://skullproxy.com"];
+// const proxies = ["http://skullproxy.com"];
+const requestInterval = 3000;
 
 module.exports = (pac, go) => {
-    request({url: url, proxy: getProxy()}, (err, response, html) => {
+    request({url: url/*, proxy: getProxy()*/}, (err, response, html) => {
         if (err) return go(err);
         console.log('im back');
         let $ = cheerio.load(html);
         let albums = {};
         let activeAlbum = null;
         let children = $('#listAlbum').children();
-        async.eachSeries(children,
+        return async.eachSeries(children,
             function(child, go) {
                 let el = $(child);
 
@@ -39,7 +39,7 @@ module.exports = (pac, go) => {
                         console.log('\n\n', lyricsText, '\n\n');
                         if (lyricsText)
                             new pac.models.Piece('arcade fire', song.album, song.name, lyricsText, el.attr('href'));
-                        return go();
+                        return setTimemout(go, requestInterval);
                     });
                 }
                 return go();
@@ -54,7 +54,7 @@ module.exports = (pac, go) => {
 
 let emptyLyrics = [];
 function scrapeLyrics(url, go) {
-    request({url: url, proxy: getProxy()}, (err, response, html) => {
+    request({url: url/*, proxy: getProxy()*/}, (err, response, html) => {
         if (err) return go(err);
         let $ = cheerio.load(html);
         // let divs = $('div:not([class])')
