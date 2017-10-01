@@ -1,7 +1,11 @@
 var natural = require('natural');
 var nounInflector = new natural.NounInflector();
-console.log(nounInflector.pluralize('radius'));
-console.log(nounInflector.singularize('tooting'));
+var PorterStemmer = natural.PorterStemmer;
+// console.log(nounInflector.pluralize('radius'));
+// console.log(nounInflector.singularize('tooting'));
+console.log(natural.PorterStemmer.stem("words"))
+console.log(natural.PorterStemmer.stem("sleeping"))
+
 //
 // var metaphone = natural.Metaphone;
 // console.log(metaphone.process('phonetics'));

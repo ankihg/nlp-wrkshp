@@ -1,11 +1,10 @@
 const natural = require('natural');
-const nounInflector = new natural.NounInflector();
 
 const metadata = require('./metadata');
 
 module.exports = {
     matchThemes(holder, occurrence) {
-        let word = nounInflector.singularize(occurrence.word.toLowerCase());
+        let word = natural.PorterStemme.stem(occurrence.word.toLowerCase());
         let themes = metadata.wordToThemes[word] || [];
         if (metadata.themes[word]) themes.push(word);
         themes.forEach((theme) => {
