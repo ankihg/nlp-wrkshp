@@ -19,6 +19,13 @@ class Piece {
     static all(by) {
         return all[by || 'arr'];
     }
+
+    static import(filepath) {
+        let all = require('../' + filepath);
+        all.forEach((piece) => {
+            new Piece(piece.artist, piece.collection, piece.name, piece.text, piece.datapath);
+        });
+    }
 };
 
 module.exports = Piece;
