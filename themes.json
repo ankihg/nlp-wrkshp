@@ -69,6 +69,30 @@
             "Just burn it all down, and bring the ashes to me"
         ]
     },
+    "war": {
+        "bomb": [
+            "It's not like I dropped the bomb, ",
+            "Show me where them bombs will fall",
+            "Show me where them bombs will fall",
+            "But by the time the first bombs fell"
+        ],
+        "war": [
+            "Now the war is won",
+            "Don't wanna fight in a holy war",
+            "World War III, when are you coming for me?",
+            "In a suburban war",
+            "And before a world war does with us whatever it will do",
+            "Before your war against the suburbs began",
+            "But you started a war",
+            "Though we know the culture war,",
+            "Oh, we know the culture war,",
+            "in your culture war.",
+            "We're soldiers now in the culture war.",
+            "We're soldiers now in the culture war.",
+            "You want it? You got it, here's your culture war.",
+            "To all the boys little wars"
+        ]
+    },
     "family": {
         "mom": [
             "on my conscience mom ",
@@ -138,6 +162,30 @@
             "My mother was crying on the day of our wedding",
             "You hear your mother screaming",
             "Your mother's screaming"
+        ],
+        "son": [
+            "Scare your son and scare your daughter",
+            "Scare your son and scare your daughter",
+            "Scare your son and scare your daughter",
+            "Scare your son and scare your daughter",
+            "Je nage, mais les sons me suivent",
+            "Je nage, mais les sons me suivent",
+            "Then send me a son",
+            "Son, it's time to go",
+            "we were deciding what to name our son",
+            "Let's call that son of a bitch"
+        ],
+        "daughter": [
+            "Scare your son and scare your daughter",
+            "Scare your son and scare your daughter",
+            "Scare your son and scare your daughter",
+            "Scare your son and scare your daughter",
+            "To seat my daughters there by your right hand",
+            "Why I want a daughter while I'm still young",
+            "Mother, sister, daughter",
+            "While his daughter hid and watched,",
+            "Abraham's daughter raised her voice.",
+            "Abraham's daughter raised her bow."
         ]
     },
     "sleep": {
@@ -170,12 +218,84 @@
             "Hide under the covers with sleeping pills and",
             "I'm not sleeping cold wind blowing"
         ],
+        "cover": [
+            "Ice has covered up my parents hands",
+            "Ice has covered up my parents hands",
+            "My eyes are covered by the hands of my unborn kids, ",
+            "Underneath the covers",
+            "Underneath the covers",
+            "Come on hide your lovers, underneath the covers",
+            "Come on hide your lovers, underneath the covers",
+            "Hidin' from your brothers, underneath the covers",
+            "Come on hide your lovers underneath the covers",
+            "But when I say I love you, your silence covers me",
+            "Hide under the covers with sleeping pills and",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue",
+            "Cover my eyes electric blue"
+        ],
         "bed": [
             "I lived for a year, in the bed by the window",
             "Or tuck me into bed, and wake me when I'm dead",
             "Or tuck me into bed, and wake me when I'm dead",
             "Or tuck me into bed, and wake me when I'm dead",
             "Or tuck me into bed, and wake me when I'm dead"
+        ]
+    },
+    "water": {
+        "ship": [
+            "I'm sleeping in a battle ship ",
+            "Ships!",
+            "If you leave them ships are gonna wreck",
+            "Can you see the funny side, the ships are gonna wreck",
+            "We know a place where no ships go"
+        ],
+        "boat": [
+            "I guess it's time to build a boat",
+            "All the birds in the boat were singing, \"Man this is it\""
+        ],
+        "water": [
+            "just some water getting hotter in the flames. ",
+            "Faster than without water",
+            "Faster than without water",
+            "Down into the water black",
+            "And water break on a burning wick and douse the flame kill her quiver "
+        ],
+        "rain": [
+            "You pray for rain, I pray for blindness",
+            "We’re just a million little gods causin' rain storms,",
+            "The rain can't get you wet"
+        ],
+        "ocean": [
+            "I walked down to the ocean",
+            "In an ocean of noise",
+            "Into an ocean of violence",
+            "In an ocean of noise",
+            "An ocean of violence",
+            "They hide the ocean in a shell",
+            "The ocean in a shell",
+            "The blood will flow into the ocean",
+            "The ocean in a paper cup",
+            "The Atlantic Ocean I'd be fucking set"
+        ],
+        "wave": [
+            "There's a great black wave in the middle of the sea",
+            "There's a great black wave in the middle of the sea",
+            "There's a great black wave in the middle of the sea",
+            "There's a great black wave in the middle of the sea"
         ]
     },
     "suburb": {
@@ -573,11 +693,6 @@
             "Then our skin gets thicker from living out in the snow",
             "Kids are dyin' out in the snow, ",
             "So keep driving, keep driving through the snow"
-        ],
-        "rain": [
-            "You pray for rain, I pray for blindness",
-            "We’re just a million little gods causin' rain storms,",
-            "The rain can't get you wet"
         ],
         "wind": [
             "The wind is blowing all the ashes around",

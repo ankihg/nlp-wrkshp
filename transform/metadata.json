@@ -24,7 +24,10 @@
         },
         "weather": {},
         "house": {},
-        "sleep": {}
+        "sleep": {},
+        "war": {},
+        "water": {},
+        "money": {}
     },
     "wordToThemes": {
         "flame": ["fire"],
@@ -52,12 +55,24 @@
         "father": ["family"],
         "brother": ["family"],
         "sister": ["family"],
+        "daughter": ["family"],
+        "son": ["family"],
         "storm": ["weather"],
         "rain": ["weather"],
         "snow": ["weather"],
         "wind": ["weather"],
         "bed": ["sleep"],
         "tired": ["sleep"],
-        "covers": ["sleep"]
+        "cover": ["sleep"],
+        "bomb": ["war"],
+        "ocean": ["water"],
+        "wave": ["water"],
+        "rain": ["water"],
+        "thirsty": ["water"],
+        "boat": ["water"],
+        "ship": ["water"],
+        "coast": ["water"],
+        "submarine": ["water"],
+        "business": ["money"]
     }
 }
