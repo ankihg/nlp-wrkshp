@@ -1,12 +1,13 @@
 const request = require('request');
 const cheerio = require('cheerio');
 const async = require('async');
+const fs = require('fs');
 
 const host = 'https://www.azlyrics.com';
 const url = 'https://www.azlyrics.com/a/arcadefire.html';
 
 // const proxies = ["http://skullproxy.com"];
-const requestInterval = 3000;
+const requestInterval = 4000;
 
 module.exports = (pac, go) => {
     request({url: url/*, proxy: getProxy()*/}, (err, response, html) => {
@@ -39,15 +40,17 @@ module.exports = (pac, go) => {
                         console.log('\n\n', lyricsText, '\n\n');
                         if (lyricsText)
                             new pac.models.Piece('arcade fire', song.album, song.name, lyricsText, el.attr('href'));
-                        return setTimemout(go, requestInterval);
+                        return setTimeout(go, requestInterval);
                     });
                 }
                 return go();
             }, (e) => {
                 console.log(e || 'success');
-                console.log(JSON.stringify(albums, null, 4));
+                console.log('albums', JSON.stringify(albums, null, 4));
+                console.log('pieces', JSON.stringify(pac.models.Piece.all(), null, 4));
+                if (e) return go(e);
+                return fs.writeFile('pieces.json', JSON.stringify(pac.models.Piece.all(), null, 4), go);
                 // console.log('emptyLyrics', emptyLyrics);
-                go(e);
             });
     });
 };
