@@ -1,4 +1,5 @@
 const async = require('async');
+const fs = require('fs');
 
 const pac = {
     models: require('./models'),
@@ -12,6 +13,7 @@ const self = () => {
         ], (e) => {
             console.log('e', e);
             console.log(JSON.stringify(pac.themes, null, 4));
+            return fs.writeFile('themes.json', JSON.stringify(pac.themes, null, 4), () => {});
             // Object.keys(pac.words).forEach((word) => {
             //     console.log(word, pac.words[word].associations);
             //     // let {occurrences, associations} = pac.words[word];

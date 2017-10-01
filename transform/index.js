@@ -22,7 +22,7 @@ module.exports = (pac, go) => {
                             let words = tokenizer.tokenize(line);
                             async.each(words, (word, go) => {
                                 let occurrence = new pac.models.Occurrence(piece.id, stanza, line, word);
-                                utils.matchThemes(pac.themes, occurrence);
+                                utils.matchThemes(pac.themes, occurrence, piece);
                                 go();
                             }, go);
                         }, go);
