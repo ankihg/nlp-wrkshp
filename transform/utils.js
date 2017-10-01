@@ -4,7 +4,7 @@ const metadata = require('./metadata');
 
 module.exports = {
     matchThemes(holder, occurrence) {
-        let word = natural.PorterStemme.stem(occurrence.word.toLowerCase());
+        let word = natural.PorterStemmer.stem(occurrence.word.toLowerCase());
         let themes = metadata.wordToThemes[word] || [];
         if (metadata.themes[word]) themes.push(word);
         themes.forEach((theme) => {
