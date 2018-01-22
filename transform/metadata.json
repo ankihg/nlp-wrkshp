@@ -13,7 +13,7 @@
         "transportation": ["boat", "car", "submarine", "train", "plane", "bike"],
         "food": ["apple", "hunger", "plate", "fork", "knife"],
         "religion": ["church", "sermon"],
-        "body": ["hands", "face", "feet", "eyes"],
+        "body": ["hands", "face", "feet", "eyes", "head"],
         "death": ["afterlife", "burry", "die"],
         "light": ["dark", "flame", "fire", "reflection", "shine", "eyes"]
     }
