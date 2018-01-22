@@ -1,6 +1,6 @@
 {
     "themes": {
-        "fire": ["flame", "burn", "gasoline", "ash"],
+        "fire": ["flame", "burn", "gasoline", "ash", "candle"],
         "car": ["headlights", "street", "gasoline", "highway", "drive", "road", "interstate"],
         "suburb": ["grass", "street", "gasoline", "house", "drive", "road", "car", "suburban", "yard", "park", "sprawl"],
         "family": ["parent", "mom", "mother", "dad", "father", "brother", "sister", "mama"],
