@@ -24,7 +24,7 @@ function _buildWordToThemes(themes) {
     return Object.keys(themes).reduce((wordToThemes, themeKey) => {
         wordToThemes[stem(themeKey)] = wordToThemes[stem(themeKey)] || {};
         wordToThemes[stem(themeKey)][themeKey] = true;
-        Object.keys(themes[themeKey]).forEach((word) => {
+        themes[themeKey].forEach((word) => {
             wordToThemes[stem(word)] = wordToThemes[stem(word)] || {};
             wordToThemes[stem(word)][themeKey] = true;
         });
