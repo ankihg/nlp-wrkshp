@@ -6,7 +6,7 @@
         "family": ["parent", "mom", "mother", "dad", "father", "brother", "sister", "mama"],
         "weather": ["storm", "rain", "wind", "snow", "lightning"],
         "house": ["window", "driveway", "wall", "room", "bed", "stove", "kitchen", "cook"],
-        "sleep": ["bed", "tired", "cover", "pillow"],
+        "sleep": ["bed", "tired", "cover", "pillow", "dream"],
         "war": ["bomb", "gun", "soldier", "fight"],
         "water": ["ocean", "wave", "rain", "thirsty", "boat", "ship", "coast", "sea", "submarine", "sub"],
         "money": ["businessmen", "shop", "mall", "millionaire"],
