@@ -12,9 +12,10 @@
         "money": ["businessmen", "shop", "mall", "millionaire"],
         "transportation": ["boat", "car", "submarine", "train", "plane", "bike"],
         "food": ["apple", "hunger", "plate", "fork", "knife"],
-        "religion": ["church", "sermon"],
+        "religion": ["church", "sermon", "god"],
         "body": ["hands", "face", "feet", "eyes", "head"],
-        "death": ["afterlife", "burry", "die"],
-        "light": ["dark", "flame", "fire", "reflection", "shine", "eyes"]
+        "death": ["afterlife", "burry", "die", "reaper"],
+        "light": ["dark", "flame", "fire", "reflection", "shine", "eyes"],
+        "nature": ["tree", "mountain", "garden"]
     }
 }
