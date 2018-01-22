@@ -99,6 +99,32 @@
         "face": [
             "Face down in the dirt",
             "Some of them change their faces"
+        ],
+        "head": [
+            "You change all the lead sleeping in my head",
+            "You change all the lead sleeping in my head to gold",
+            "Walking with your head in a sling",
+            "Heaven is only in my head!",
+            "Still the shapes fill my head",
+            "Our heads are just houses",
+            "You and I we head back East,",
+            "Some cities make you lose your head",
+            "Come out of your head",
+            "Come out of your head",
+            "Head full of sound",
+            "When the sun goes down you head inside",
+            "But it starts in your feet, then it goes to your head",
+            "Every inch of space in your head",
+            "Now I can't get my head around it",
+            "Now I can't get my head around it",
+            "Now I can't get my head around it",
+            "Now I can't get my head around it",
+            "Now I can't get my head around it",
+            "Trumpets of angels call for my head",
+            "Red space in my head again",
+            "And yes you're in my head, but that doesn't make you here",
+            "Of repeating what I say in my head",
+            "(shout out any year that comes into your head, its all the dark)"
         ]
     },
     "light": {
@@ -458,6 +484,9 @@
             "But even stars they die when they get old",
             "Before you die",
             "That familiar feeling of believing that we'll die without it"
+        ],
+        "reaper": [
+            "when the reaper he reaches and touches my hand."
         ],
         "death": [
             "The death of everything that's wild."
@@ -882,6 +911,91 @@
             "Living in the sprawl"
         ]
     },
+    "nature": {
+        "tree": [
+            "Trees keep fallin' at my feet",
+            "My family tree's",
+            "You say I can't see the forest for the trees",
+            "If you can't see the forest for the trees",
+            "If you can't see the forest for the trees",
+            "Trees and power lines are all dressed in the ice",
+            "Looking down at the leaves falling off the tree"
+        ],
+        "mountain": [
+            "You can't climb across a mountain so high",
+            "Dead shopping malls rise like mountains beyond mountains",
+            "Dead shopping malls rise like mountains beyond mountains",
+            "Dead shopping malls rise like mountains beyond mountains",
+            "Dead shopping malls rise like mountains beyond mountains",
+            "Dead shopping malls rise like mountains beyond mountains",
+            "Dead shopping malls rise like mountains beyond mountains"
+        ],
+        "garden": [
+            "A garden left for ruin by a millionaire inside of a private prison",
+            "A garden left for ruin by a millionaire inside of a private prison",
+            "A garden left for ruin by and by as I hide inside of my private prison"
+        ]
+    },
+    "religion": {
+        "god": [
+            "Don't blame God",
+            "Just blame God",
+            "Don't blame God",
+            "We’re just a million little gods causin' rain storms,",
+            "Oh God! Well look at you now!",
+            "Oh God! I had to laugh!",
+            "Dear God, I'm a good Christian man",
+            "You know that I'm a God-fearing man",
+            "You know that I'm a God-fearing man",
+            "Dear God, would you send me a child?",
+            "Oh! God, would you send me a child",
+            "You know God loves the sensitive ones",
+            "Oh my dear God what is that horrible song they're singin'",
+            "Pray that God won't live to see",
+            "God knows what you might find",
+            "God knows what you might find",
+            "Oh my God, what an awful word",
+            "But God said,",
+            "God in heaven, could you please me?",
+            "God, make me famous",
+            "God, make me famous",
+            "God, make me famous",
+            "With the good God damn",
+            "With the good God damn",
+            "Maybe there's a good God, damn",
+            "Maybe there's a good God, damn",
+            "Maybe there's a good God, damn",
+            "Maybe there's a good God, damn",
+            "Could there be a good God? damn",
+            "Could there be a good God? damn",
+            "Maybe there's a good God",
+            "Maybe there's a good God, damn",
+            "Maybe there's a good God, damn",
+            "Maybe there's a good God, damn",
+            "Maybe there's a good God, damn",
+            "Could there be a good God? Damn",
+            "Could there be a good God? Damn",
+            "Maybe there's a good God, damn",
+            "Maybe there's a good God, damn",
+            "Maybe there's a good God, damn",
+            "Maybe there's a good God",
+            "'Cause God knows where I've been",
+            "Over the interstate, God saying hurry don't be late",
+            "Over the interstate, God saying hurry don't be late"
+        ],
+        "church": [
+            "Working for the Church while your family dies",
+            "\"Been working for the Church while my family dies",
+            "Working for the church while your life falls apart",
+            "A broken church, no bells a-ringin'"
+        ],
+        "sermon": [
+            "You never trust a millionaire quoting the sermon on the mount"
+        ],
+        "religion": [
+            "Hand out the judgments of their religion"
+        ]
+    },
     "food": {
         "appl": [
             "My mouth is full, your heart is an apple",
@@ -1073,20 +1187,6 @@
             "Dead shopping malls rise like mountains beyond mountains",
             "Dead shopping malls rise like mountains beyond mountains",
             "Dead shopping malls rise like mountains beyond mountains"
-        ]
-    },
-    "religion": {
-        "church": [
-            "Working for the Church while your family dies",
-            "\"Been working for the Church while my family dies",
-            "Working for the church while your life falls apart",
-            "A broken church, no bells a-ringin'"
-        ],
-        "sermon": [
-            "You never trust a millionaire quoting the sermon on the mount"
-        ],
-        "religion": [
-            "Hand out the judgments of their religion"
         ]
     }
 }
