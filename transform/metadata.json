@@ -2,14 +2,19 @@
     "themes": {
         "fire": ["flame", "burn", "gasoline", "ash"],
         "car": ["headlights", "street", "gasoline", "highway", "drive", "road", "interstate"],
-        "suburb": ["grass", "street", "gasoline", "house", "drive", "road", "car", "suburban", "yard"],
+        "suburb": ["grass", "street", "gasoline", "house", "drive", "road", "car", "suburban", "yard", "park", "sprawl"],
         "family": ["parent", "mom", "mother", "dad", "father", "brother", "sister"],
         "weather": ["storm", "rain", "wind", "snow"],
         "house": ["window", "driveway", "wall", "room", "bed"],
         "sleep": ["bed", "tired", "cover", "pillow"],
         "war": ["bomb", "gun"],
         "water": ["ocean", "wave", "rain", "thirsty", "boat", "ship", "coast", "sea", "submarine"],
-        "money": ["businessmen", "shop", "mall"],
-        "transportation": ["boat", "car", "submarine", "train", "plane", "bike"]
+        "money": ["businessmen", "shop", "mall", "millionaire"],
+        "transportation": ["boat", "car", "submarine", "train", "plane", "bike"],
+        "food": ["apple", "hunger", "plate", "fork", "knife"],
+        "religion": ["church", "sermon"],
+        "body": ["hands", "face", "feet", "eyes"],
+        "death": ["afterlife", "burry", "die"],
+        "light": ["dark", "flame", "fire", "reflection", "shine", "eyes"]
     }
 }
