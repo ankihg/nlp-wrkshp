@@ -188,6 +188,68 @@
             "Abraham's daughter raised her bow."
         ]
     },
+    "water": {
+        "sea": [
+            "She's gone to sea ",
+            "Throw my ashes into the sea.",
+            "We can reach the sea",
+            "There's a great black wave in the middle of the sea",
+            "There's a great black wave in the middle of the sea",
+            "There's a great black wave in the middle of the sea",
+            "There's a great black wave in the middle of the sea",
+            "A house on fire or a rising sea?",
+            "I was standing beside you by a frozen sea",
+            "This frozen sea",
+            "A frozen sea",
+            "Or a shallow sea",
+            "Staring out at the open sea",
+            "Home sick, sea sick, love sick, car sick"
+        ],
+        "ship": [
+            "I'm sleeping in a battle ship ",
+            "Ships!",
+            "If you leave them ships are gonna wreck",
+            "Can you see the funny side, the ships are gonna wreck",
+            "We know a place where no ships go"
+        ],
+        "boat": [
+            "I guess it's time to build a boat",
+            "All the birds in the boat were singing, \"Man this is it\""
+        ],
+        "water": [
+            "just some water getting hotter in the flames. ",
+            "Faster than without water",
+            "Faster than without water",
+            "Down into the water black",
+            "And water break on a burning wick and douse the flame kill her quiver "
+        ],
+        "rain": [
+            "You pray for rain, I pray for blindness",
+            "We’re just a million little gods causin' rain storms,",
+            "The rain can't get you wet"
+        ],
+        "ocean": [
+            "I walked down to the ocean",
+            "In an ocean of noise",
+            "Into an ocean of violence",
+            "In an ocean of noise",
+            "An ocean of violence",
+            "They hide the ocean in a shell",
+            "The ocean in a shell",
+            "The blood will flow into the ocean",
+            "The ocean in a paper cup",
+            "The Atlantic Ocean I'd be fucking set"
+        ],
+        "wave": [
+            "There's a great black wave in the middle of the sea",
+            "There's a great black wave in the middle of the sea",
+            "There's a great black wave in the middle of the sea",
+            "There's a great black wave in the middle of the sea"
+        ],
+        "coast": [
+            "And now I'm almost there, yeah, I'm almost to the coast"
+        ]
+    },
     "sleep": {
         "sleep": [
             "I'm sleeping in a battle ship ",
@@ -253,49 +315,6 @@
             "Or tuck me into bed, and wake me when I'm dead",
             "Or tuck me into bed, and wake me when I'm dead",
             "Or tuck me into bed, and wake me when I'm dead"
-        ]
-    },
-    "water": {
-        "ship": [
-            "I'm sleeping in a battle ship ",
-            "Ships!",
-            "If you leave them ships are gonna wreck",
-            "Can you see the funny side, the ships are gonna wreck",
-            "We know a place where no ships go"
-        ],
-        "boat": [
-            "I guess it's time to build a boat",
-            "All the birds in the boat were singing, \"Man this is it\""
-        ],
-        "water": [
-            "just some water getting hotter in the flames. ",
-            "Faster than without water",
-            "Faster than without water",
-            "Down into the water black",
-            "And water break on a burning wick and douse the flame kill her quiver "
-        ],
-        "rain": [
-            "You pray for rain, I pray for blindness",
-            "We’re just a million little gods causin' rain storms,",
-            "The rain can't get you wet"
-        ],
-        "ocean": [
-            "I walked down to the ocean",
-            "In an ocean of noise",
-            "Into an ocean of violence",
-            "In an ocean of noise",
-            "An ocean of violence",
-            "They hide the ocean in a shell",
-            "The ocean in a shell",
-            "The blood will flow into the ocean",
-            "The ocean in a paper cup",
-            "The Atlantic Ocean I'd be fucking set"
-        ],
-        "wave": [
-            "There's a great black wave in the middle of the sea",
-            "There's a great black wave in the middle of the sea",
-            "There's a great black wave in the middle of the sea",
-            "There's a great black wave in the middle of the sea"
         ]
     },
     "suburb": {
@@ -746,6 +765,22 @@
         ],
         "yard": [
             "But in my dreams we're still screamin' and runnin' through the yard"
+        ]
+    },
+    "money": {
+        "businessmen": [
+            "If the businessmen drink my blood",
+            "If the businessmen drink my blood"
+        ],
+        "shop": [
+            "Dead shopping malls rise like mountains beyond mountains",
+            "Dead shopping malls rise like mountains beyond mountains",
+            "Dead shopping malls rise like mountains beyond mountains"
+        ],
+        "mall": [
+            "Dead shopping malls rise like mountains beyond mountains",
+            "Dead shopping malls rise like mountains beyond mountains",
+            "Dead shopping malls rise like mountains beyond mountains"
         ]
     }
 }

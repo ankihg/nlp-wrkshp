@@ -72,7 +72,10 @@
         "boat": ["water"],
         "ship": ["water"],
         "coast": ["water"],
+        "sea": ["water"],
         "submarine": ["water"],
-        "business": ["money"]
+        "businessmen": ["money"],
+        "shop": ["money"],
+        "mall": ["money"]
     }
 }

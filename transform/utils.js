@@ -6,7 +6,7 @@ module.exports = {
     matchThemes(holder, occurrence, piece) {
         let word = natural.PorterStemmer.stem(occurrence.word.toLowerCase());
         let themes = metadata.wordToThemes[word] || [];
-        if (metadata.themes[word]) themes.push(word);
+        // if (metadata.themes[word]) themes.push(word);
         themes.forEach((theme) => {
             holder[theme] = holder[theme] || {};
             holder[theme][word] = holder[theme][word] || [];
@@ -18,3 +18,8 @@ module.exports = {
         });
     }
 };
+
+
+function _buildWordToThemes(themes) {
+
+}

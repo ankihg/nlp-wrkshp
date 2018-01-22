@@ -5,6 +5,8 @@ var PorterStemmer = natural.PorterStemmer;
 // console.log(nounInflector.singularize('tooting'));
 console.log(natural.PorterStemmer.stem("words"))
 console.log(natural.PorterStemmer.stem("sleeping"))
+console.log(natural.PorterStemmer.stem("money"))
+console.log(natural.PorterStemmer.stem("house"))
 
 //
 // var metaphone = natural.Metaphone;
