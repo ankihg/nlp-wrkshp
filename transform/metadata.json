@@ -12,11 +12,12 @@
         "money": ["businessmen", "shop", "mall", "millionaire"],
         "transportation": ["boat", "car", "submarine", "train", "plane", "bike"],
         "food": ["apple", "hunger", "plate", "fork", "knife", "dining", "kitchen", "stove", "cook", "meal"],
-        "religion": ["church", "sermon", "god", "heaven"],
+        "religion": ["church", "sermon", "god", "heaven", "preacher"],
         "body": ["hands", "face", "feet", "eyes", "head"],
         "death": ["afterlife", "burry", "die", "reaper", "dead", "heaven"],
         "light": ["dark", "flame", "fire", "reflection", "shine", "eyes", "lightning", "shadow", "sun"],
         "nature": ["tree", "mountain", "garden", "bird", "wild"],
-        "communication": ["letter", "telephone", "mail", "call", "phone", "message", "voice", "speak"]
+        "communication": ["letter", "telephone", "mail", "call", "phone", "message", "voice", "speak"],
+        "technology": ["television", "tv", "laptop", "cellphone"]
     }
 }
