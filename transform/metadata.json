@@ -11,11 +11,12 @@
         "water": ["ocean", "wave", "rain", "thirsty", "boat", "ship", "coast", "sea", "submarine", "sub"],
         "money": ["businessmen", "shop", "mall", "millionaire"],
         "transportation": ["boat", "car", "submarine", "train", "plane", "bike"],
-        "food": ["apple", "hunger", "plate", "fork", "knife", "dining", "kitchen", "stove", "cook"],
+        "food": ["apple", "hunger", "plate", "fork", "knife", "dining", "kitchen", "stove", "cook", "meal"],
         "religion": ["church", "sermon", "god", "heaven"],
         "body": ["hands", "face", "feet", "eyes", "head"],
         "death": ["afterlife", "burry", "die", "reaper", "dead", "heaven"],
         "light": ["dark", "flame", "fire", "reflection", "shine", "eyes", "lightning", "shadow", "sun"],
-        "nature": ["tree", "mountain", "garden", "bird", "wild"]
+        "nature": ["tree", "mountain", "garden", "bird", "wild"],
+        "communication": ["letter", "telephone", "mail", "call", "phone", "message", "voice", "speak"]
     }
 }
